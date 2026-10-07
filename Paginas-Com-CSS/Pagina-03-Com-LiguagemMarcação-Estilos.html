@@ -1,0 +1,113 @@
+<!-- Informa ao navegador que este documento utiliza HTML5. -->
+<!doctype html>
+<!-- Elemento raiz que envolve todo o documento HTML. -->
+<html>
+  <!-- Contém as configurações e os estilos da página. -->
+  <head>
+    <!-- Define UTF-8 para que acentos e caracteres especiais sejam exibidos corretamente. -->
+    <meta charset="utf-8" />
+    <!-- Texto exibido na aba ou na janela do navegador. -->
+    <title>Posicionamento elementos com CSS</title>
+    <!-- Início das regras CSS escritas dentro do próprio arquivo HTML. -->
+    <style type="text/css">
+      /* Seleciona o elemento que possui id="main". */
+      div#main {
+        /* Centraliza horizontalmente o elemento quando existe espaço disponível. */
+        margin: auto;
+        /* Define a largura do conteúdo principal como 400 pixels. */
+        width: 400px;
+        /* Coloca um fundo laranja no conteúdo principal. */
+        background-color: orange;
+        /* Cria uma borda preta, contínua e com 1 pixel de espessura. */
+        border: 1px solid #000;
+        /* Adiciona 10 pixels de espaço interno em todos os lados. */
+        padding: 10px;
+      }
+      /* Seleciona todos os elementos que possuem a classe img. */
+      .img {
+        /* Define a largura da imagem. */
+        width: 394px;
+        /* Define a altura da imagem. */
+        height: 200px;
+        /* Cria uma borda amarela com efeito de relevo interno. */
+        border: 3px inset yellow;
+      }
+      /* Seleciona o elemento cujo id é container-texto. */
+      #container-texto {
+        /* Define a largura do conteúdo interno da caixa de texto. */
+        width: 382px;
+        /* Define a cor azul do fundo da caixa. */
+        background-color: blue;
+        /* Define a altura da caixa de texto. */
+        height: 150px;
+        /* Exibe barras de rolagem quando o conteúdo não couber. */
+        overflow: auto;
+        /* Cria 20 pixels de espaço acima da caixa. */
+        margin-top: 20px;
+        /* Adiciona 5 pixels de espaço interno no lado esquerdo. */
+        padding-left: 5px;
+        /* Adiciona 5 pixels de espaço interno no lado direito. */
+        padding-right: 5px;
+        /* Cria uma borda cinza tracejada de 4 pixels. */
+        border: 4px dashed grey;
+      }
+      /* Seleciona os trechos de texto que possuem a classe texto. */
+      .texto {
+        /* Deixa o texto em negrito. */
+        font-weight: bold;
+        /* Sublinha o texto. */
+        text-decoration: underline;
+      }
+      /* Finaliza o bloco de estilos CSS. */
+    </style>
+    <!-- Finaliza a área de configurações do documento. -->
+  </head>
+  <!-- Início do conteúdo que será exibido na página. -->
+  <body>
+    <!-- Cria o contêiner principal da página e aplica as regras de #main. -->
+    <div id="main">
+      <!-- Exibe o título principal da página. -->
+      <h1>Visão Final da Página</h1>
+      <!-- Inicia a imagem que será exibida; class define o estilo e src define sua origem. -->
+      <img
+        class="img"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Boxmodell-detail.png/220px-Boxmodell-detail.png"
+      />
+      <!-- Cria a caixa azul que contém os parágrafos. -->
+      <div id="container-texto">
+        <!-- Inicia o primeiro parágrafo. -->
+        <p>
+          <!-- Inicia um trecho que será exibido em negrito e sublinhado. -->
+          <span class="texto">
+            <!-- Texto do primeiro trecho formatado. -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In euismod
+            nibh sit amet justo cursus, eget posuere arcu pharetra.
+          </span>
+          <!-- Texto comum que continua o primeiro parágrafo. -->
+          . Donec vestibulum, lectus non consectetur condimentum, ex purus
+          luctus lectus, at lacinia augue sem euismod diam.
+          <!-- Encerra o primeiro parágrafo. -->
+        </p>
+        <!-- Inicia o segundo parágrafo. -->
+        <p>
+          <!-- Inicia outro trecho que receberá negrito e sublinhado. -->
+          <span class="texto">
+            <!-- Texto do segundo trecho formatado. -->
+            Aliquam aliquam accumsan varius. Fusce facilisis sollicitudin
+            tortor.
+          </span>
+          <!-- Texto comum que continua o segundo parágrafo. -->
+          . Curabitur aliquet bibendum ligula, vitae porta nunc ornare sed.
+          Aliquam dapibus scelerisque turpis, eget hendrerit turpis elementum
+          in. Aliquam accumsan sit amet nisi euismod imperdiet. Integer non
+          pellentesque ante, nec gravida leo.
+          <!-- Encerra o segundo parágrafo. -->
+        </p>
+        <!-- Encerra a caixa azul de texto. -->
+      </div>
+      <!-- Encerra o contêiner principal. -->
+    </div>
+    <!-- Encerra o conteúdo visível da página. -->
+  </body>
+  <!-- Encerra o documento HTML. -->
+</html>
